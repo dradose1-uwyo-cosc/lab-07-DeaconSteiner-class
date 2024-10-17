@@ -1,12 +1,7 @@
-# [Name]
-## [Assignment #]
-## [Submission date: MM/DD/YY]
+# [Deacon Steiner]
+## [Assignment 07]
+## [Submission date: 11/03/24]
 ## Worked with/sources 
-* example
-* example
-* example
-* example
+
 ## Project Quirks/ Things that don't work
-* example
-* example
-* example
+
