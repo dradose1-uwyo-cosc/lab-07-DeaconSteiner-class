@@ -4,9 +4,8 @@
 # Lab 07
 # Lab Section: 11
 # Sources, people worked with, help given to: 
-
 # https://tutorial.eyehunts.com/python/python-exit-while-loop-with-user-input-example-code/ - Used to figure out how to use user input to exit a loop
-
+# TA helped me figure out how to separate the initial expression string
 
 # Prompt the user for an upper bound 
 # Write a while loop that gives the factorial of that upper bound
