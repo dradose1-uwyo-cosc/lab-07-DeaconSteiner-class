@@ -1,12 +1,11 @@
-# Your Name Here
+# Deacon Steiner
 # UWYO COSC 1010
-# Submission Date
-# Lab XX
-# Lab Section: 
+# 11/03/24
+# Lab 07
+# Lab Section: 11
 # Sources, people worked with, help given to: 
-# your
-# comments
-# here
+
+# https://tutorial.eyehunts.com/python/python-exit-while-loop-with-user-input-example-code/ - Used to figure out how to use user input to exit a loop
 
 
 # Prompt the user for an upper bound 
@@ -16,10 +15,17 @@
     # To do so you can use the methods `.isdigit()` or `.isnumeric()`
     # If a user did not enter a number output a statement saying so
 # You will continue to prompt the user until a proper integer value is entered
+upper_bound = int(input("Please enter a number: "))
 
-factorial = 1
+def get_factorial(n):
+    factorial = 1
+    for i in range(1, n + 1):
+        factorial *= i
+    return factorial
 
-print(f"The result of the factorial based on the given bound is {factorial}")
+get_factorial(upper_bound)
+    
+print(f"The result of the factorial based on the given bound: {upper_bound} is: {get_factorial(upper_bound)} ")
 
 print("*"*75)
 # Create a while loop that prompts a user for input of an integer values
@@ -39,6 +45,23 @@ print("*"*75)
 
 num_sum = 0 
 
+while True:
+   user_value = input("Please enter a number (or exit to end) ")
+   
+   if user_value == 'exit'.lower():
+       print("Program has been exited")
+       break
+       
+   if user_value.isdigit():
+       num_sum += int(user_value)
+   elif user_value[0] == "-":
+       edited_value = user_value.replace('-', '')
+       num_sum -= int(edited_value)
+   else: 
+       print("Unknown character entered")
+    
+               
+ 
 print(f"Your final sum is {num_sum}")
 
 print("*"*75)
@@ -59,4 +82,5 @@ print("*"*75)
 # Print the result of the equation
 # Again, loop through prompting the user for input until `exit` in any casing is input 
 
-        
+
+
