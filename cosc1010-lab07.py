@@ -111,7 +111,7 @@ while True:
             print("error occured, try again")
             continue
 
-        class calculator:
+        class Calculator:
 
             def add(a, b):
                 return a + b
@@ -124,15 +124,15 @@ while True:
         
         answer = ''
         if operator == '+':
-            answer = calculator.add(operand_1, operand_2)
+            answer = Calculator.add(operand_1, operand_2)
             
         elif operator == '-':
-            answer = calculator.subtract(operand_1, operand_2)
+            answer = Calculator.subtract(operand_1, operand_2)
             
         elif operator == '*':
-            answer = calculator.multiply(operand_1, operand_2)
+            answer = Calculator.multiply(operand_1, operand_2)
             
         elif operator == '/':
-            answer = calculator.divide(operand_1, operand_2)
+            answer = Calculator.divide(operand_1, operand_2)
 
         print(answer)
