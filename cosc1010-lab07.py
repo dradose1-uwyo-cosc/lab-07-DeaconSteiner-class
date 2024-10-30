@@ -14,7 +14,6 @@
     # To do so you can use the methods `.isdigit()` or `.isnumeric()`
     # If a user did not enter a number output a statement saying so
 # You will continue to prompt the user until a proper integer value is entered
-upper_bound = int(input("Please enter a number: "))
 
 def get_factorial(n):
     factorial = 1
@@ -22,9 +21,14 @@ def get_factorial(n):
         factorial *= i
     return factorial
 
-get_factorial(upper_bound)
-    
-print(f"The result of the factorial based on the given bound: {upper_bound} is: {get_factorial(upper_bound)} ")
+while True: 
+    upper_bound = input("Please enter a number: ")
+    if upper_bound.isdigit():
+        break
+    else: 
+        print("Error occured (Unknown character)")
+         
+print(f"The result of the factorial based on the given bound: {upper_bound} is: {get_factorial(int(upper_bound))} ")
 
 print("*"*75)
 # Create a while loop that prompts a user for input of an integer values
@@ -45,7 +49,7 @@ print("*"*75)
 num_sum = 0 
 
 while True:
-   user_value = input("Please enter a number (or exit to end) ")
+   user_value = input("Please enter a number (or exit to quit) ")
    
    if user_value == 'exit'.lower():
        print("Program has been exited")
